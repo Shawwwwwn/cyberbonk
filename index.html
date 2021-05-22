@@ -1,630 +1,517 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
+
+<head>
     <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes"> -->
-    <!-- Libs CSS -->
-    <link rel="stylesheet" href="./assets/fonts/Feather/feather.css">
-    <link rel="stylesheet" href="./assets/libs/flickity/dist/flickity.min.css">
-    <link rel="stylesheet" href="./assets/libs/flickity-fade/flickity-fade.css">
-    <link rel="stylesheet" href="./assets/libs/aos/dist/aos.css">
-    <link rel="stylesheet" href="./assets/libs/jarallax/dist/jarallax.css">
-    <link rel="stylesheet" href="./assets/libs/highlightjs/styles/vs2015.css">
-    <link rel="stylesheet" href="./assets/libs/@fancyapps/fancybox/dist/jquery.fancybox.min.css">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="Borrow - is the loan company, Business Website Template.">
+    <meta name="keywords" content="Financial Website Template, Bootstrap Template, Loan Product, Personal Loan">
+    <title>Loamax - Financial Solutions for Everyone</title>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+    <link href="css/fontello.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700%7CMerriweather:300,300i,400,400i,700,700i" rel="stylesheet">
+    <!-- owl Carousel Css -->
+    <link href="css/owl.carousel.css" rel="stylesheet">
+    <link href="css/owl.theme.css" rel="stylesheet">
+    <link href="css/navbar.css" rel="stylesheet">
+   
+</head>
 
-    <!-- Map -->
-    <link href='https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.css' rel='stylesheet' />
-
-    <!-- Theme CSS -->
-    <link rel="stylesheet" href="./assets/css/theme.min.css">
-
-    <title>Tom Bruh</title>
-  </head>
-  <body>
-
-    <!-- NAVBAR
-    ================================================== -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-white">
-      <div class="container">
-
-        <!-- Collapse -->
-        <div class="collapse navbar-collapse" id="navbarCollapse" style="margin-right: -80px;">
-
-          <!-- Toggler -->
-          <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-            <i class="fe fe-x"></i>
-          </button> -->
-
-          <!-- Navigation -->
-          <!-- <ul class="navbar-nav ml-auto">
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" id="navbarAccount" data-toggle="dropdown" href="#" aria-haspopup="true" aria-expanded="false">
-                Corpo Service
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarAccount">
-                <li class="dropdown-item dropright">
-                  <a class="dropdown-link dropdown-toggle" data-toggle="dropdown" href="#Features-1">
-                    Business Loan
-                  </a>
-                </li>
-                <li class="dropdown-item dropright">
-                  <a class="dropdown-link dropdown-toggle" data-toggle="dropdown" href="#Features-1">
-                    Personal Mortgage
-                  </a>
-                </li>
-                <li class="dropdown-item dropright">
-                  <a class="dropdown-link dropdown-toggle" data-toggle="dropdown" href="#Features-1">
-                    Deposit Loan
-                  </a>
-                </li>
-                <li class="dropdown-item dropright">
-                  <a class="dropdown-link dropdown-toggle" data-toggle="dropdown" href="#Features-2">
-                    Flash Loan
-                  </a>
-                </li>
-              </ul>
-            </li>
-
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" id="navbarAccount" data-toggle="dropdown" href="#footerid" aria-haspopup="true" aria-expanded="false" style="margin-right: -180px;">
-                About Us
-              </a>
-            </li>
-          </ul> -->
-
-          <!-- Button -->
-          <!-- <a class="navbar-btn btn btn-sm btn-primary lift ml-auto" href="popup1.html" target="_blank" style="margin-right: 38px;">
-            注册
-          </a>  -->
-
+<body>
+    <div class="sticky-top">
+        <div class="collapse searchbar" id="searchbar">
+            <div class="search-area bg-white">
+                <div class="container">
+                    <div class="row">
+                        <div class="offset-lg-3 col-lg-6 col-md-12 col-sm-12 col-12">
+                            <div class="input-group">
+                                <input type="text" class="form-control" placeholder="Search for...">
+                                <span class="input-group-btn">
+                                    <button class="btn btn-secondary" type="button">Go!</button>
+                                </span>
+                                <div class="btn-close">
+                                    <a class="close " aria-label="Close" data-toggle="collapse" href="#searchbar" aria-expanded="false">
+                                        <span aria-hidden="true" class="fas fa-times"></span></a></div>
+                            </div>
+                            <!-- /input-group -->
+                        </div>
+                        <!-- /.col-lg-6 -->
+                    </div>
+                </div>
+            </div>
         </div>
-
-      </div>
-    </nav>
-
-    <!-- WELCOME
-    ================================================== -->
-    <section class="pt-4 pt-md-11" style="margin-top: -50px;">
-      <div class="container">
-        <div class="row align-items-center">
-          <div class="col-12 col-md-5 col-lg-6 order-md-2">
-
-            <!-- Image -->
-            <!-- <img src="assets/img/illustrations/illustration-2.png" class="img-fluid mw-md-150 mw-lg-130 mb-6 mb-md-0" alt="..." data-aos="fade-up" data-aos-delay="100"> -->
-            <img src="assets/img/tombros/Office.jpg" id="office-image" class="img-fluid mw-md-150 mw-lg-130 mb-6 mb-md-0" alt="..." data-aos="fade-up" data-aos-delay="100">
-          </div>
-          <div class="col-12 col-md-7 col-lg-6 order-md-1" data-aos="fade-up" >
-
-            <!-- Heading -->
-            <h1 class="display-3 text-center text-md-left">
-              Professional <span class="text-primary">Real Estate Service</span> <br>
-              我们为您的各种梦想融资助力加油！
-            </h1>
-
-            <!-- Text -->
-            <p class="lead text-center text-md-left text-muted mb-6 mb-lg-8">
-              提供新移民留学生房屋贷款， 商业贷款，私人抵押贷款，无抵押闪电贷等专业服务
-            </p>
-
-            <!-- Buttons -->
-            <div class="text-center text-md-left">
-              <a href="webform.html" class="btn btn-primary shadow lift mr-1">
-                Contact Us <i class="fe fe-arrow-right d-none d-md-inline ml-3"></i>
-              </a>
-              <!-- <a href="#footerid" class="btn btn-primary shadow lift mr-1">
-                关于我们 <i class="fe fe-arrow-right d-none d-md-inline ml-3"></i>
-              </a> -->
-            </div>
-
-          </div>
-        </div> <!-- / .row -->
-      </div> <!-- / .container -->
-    </section>
-
-    <!-- FEATURES - 1
-    ================================================== -->
-    <section id="Features-1" class="py-8 py-md-11">
-      <div class="container">
-        <div class="row">
-          <div class="col-12 col-md-4" data-aos="fade-up">
-
-            <!-- Icon -->
-            <div class="icon text-primary mb-3">
-              
-              <img src="assets/img/tombros/miniLogos/1.png" style="width: 18%">
-            </div>
-
-            <!-- Heading -->
-            <h3>
-              Personal Mortgage
-            </h3>
-
-            <!-- Text -->
-            <p class="text-muted mb-6 mb-md-0">
-              新移民收入不够怎么办？
-              <br>海外居民多15%海外买家税怎么办？
-            </p>
-
-          </div>
-          <div class="col-12 col-md-4" data-aos="fade-up" data-aos-delay="50">
-
-            <!-- Icon -->
-            <div class="icon text-primary mb-3">
-              
-              <img src="assets/img/tombros/miniLogos/2.png" style="width: 18%">
-            </div>
-
-            <!-- Heading -->
-            <h3>
-              Deposit Loan
-            </h3>
-
-            <!-- Text -->
-            <p class="text-muted mb-6 mb-md-0">
-              房屋第一抵押贷款
-              <br>房屋第二抵押贷款
-            </p>
-
-          </div>
-          <div class="col-12 col-md-4" data-aos="fade-up" data-aos-delay="100">
-
-            <!-- Icon -->
-            <div class="icon text-primary mb-3">
-              
-              <img src="assets/img/tombros/miniLogos/3.png" style="width: 18%">
-            </div>
-
-            <!-- Heading -->
-            <h3>
-              Business Loan
-            </h3>
-
-            <!-- Text -->
-            <p class="text-muted mb-0">
-              Small Business
-              <br>餐馆，仓库，学校，加油站等
-            </p>
-
-          </div>
-        </div> <!-- / .row -->
-      </div> <!-- / .container -->
-    </section>
-
-    <!-- FEATURES - 2
-    ================================================== -->
-    <section id="Features-2" class="py-8 py-md-11 border-bottom" style="margin-top: -100px;">
-      <div class="container">
-        <div class="row">
-          <div class="col-12 col-md-4" data-aos="fade-up">
-
-            <!-- Icon -->
-            <div class="icon text-primary mb-3">
-              
-              <img src="assets/img/tombros/miniLogos/3.png" style="width: 18%">
-            </div>
-
-            <!-- Heading -->
-            <h3>
-              Flash Loan
-            </h3>
-
-            <!-- Text -->
-            <p class="text-muted mb-6 mb-md-0">
-              最高额度5万，利息5.99%起
-              <br>随时付清没罚金
-            </p>
-
-          </div>
-          <div class="col-12 col-md-4" data-aos="fade-up" data-aos-delay="50">
-
-            <!-- Icon -->
-            <div class="icon text-primary mb-3">
-              
-              <img src="assets/img/tombros/miniLogos/4.png" style="width: 18%">
-            </div>
-
-            <!-- Heading -->
-            <h3>
-              Insurance
-            </h3>
-
-            <!-- Text -->
-            <p class="text-muted mb-6 mb-md-0">
-              人寿保险, 重大疾病
-              <br>伤残保险, 旅游探亲保险等
-              <br>与持牌保险经纪合作
-            </p>
-
-          </div>
-          <div class="col-12 col-md-4" data-aos="fade-up" data-aos-delay="100">
-
-            <!-- Icon -->
-            <div class="icon text-primary mb-3">
-              
-              <img src="assets/img/tombros/miniLogos/1.png" style="width: 18%">
-            </div>
-
-            <!-- Heading -->
-            <h3>
-              More Services
-            </h3>
-
-            <!-- Text -->
-            <p class="text-muted mb-0">
-              告诉我们您的需求，我们会竭力为您找到最适合您的解决方案
-            </p>
-
-          </div>
-        </div> <!-- / .row -->
-      </div> <!-- / .container -->
-    </section>
-
-    <!-- Form
-    ================================================== -->
-    <section id="form-section" class="pt-4 pt-md-11" style="margin-top: -50px; padding-bottom: 100px; border-bottom: 1px solid #F1F4F8;">
-      <div class="container" style="margin-top: 50px">
-        
-            <!-- Image -->
-          <img src="assets/img/tombros/leo1.jpg" id="leo-image" style="width:40%; box-shadow: 10px 10px 5px #aaaaaa;" alt="..." data-aos="fade-up" data-aos-delay="100">
-          
-          <div id="form-container" style="position: absolute; right: 0px; top: 0px;">
-
-   <div id='crmWebToEntityForm' class="crm-form-div" style='width:600px;margin-left: 100px;'>
-    <META HTTP-EQUIV ='content-type' CONTENT='text/html;charset=UTF-8'>
-    <form action='https://crm.zoho.com/crm/WebToLeadForm' style='margin-left: 50px;margin-top: -110px;' name=WebToLeads4287662000000323001 method='POST' onSubmit='javascript:document.charset="UTF-8"; return checkMandatory4287662000000323001()' accept-charset='UTF-8'>
-  <input type='text' style='display:none;' name='xnQsjsdp' value='31f287d2ec992e009d0c2617dde0aad435507a980ed979bf364cbf48ea377749'></input> 
-  <input type='hidden' name='zc_gad' id='zc_gad' value=''></input> 
-  <input type='text' style='display:none;' name='xmIwtLD' value='7a394c8ffb15d8caad030d4796c4591e3e3c192a8e2ec8c080e97027d8898b17'></input> 
-  <input type='text'  style='display:none;' name='actionType' value='TGVhZHM='></input>
-  <input type='text' style='display:none;' name='returnURL' value='https://loamaxgroup.ca' > </input><br></br>
-    <!-- Do not remove this code. -->
-   <style>
-     #crmWebToEntityForm tr , #crmWebToEntityForm td { 
-       padding:6px;
-       border-spacing:0px;
-       border-width:0px;
-       }
-
-   </style>
-   <table id="form-table" style='margin-bottom: 100px;width:600px;border-radius: 16px;color:black'>
-
-    <tr><td colspan='2' align='left' id="form-title" style='color:black;font-family:Arial;font-size:20.5px;word-break: break-word;padding-bottom: 20px;padding-right: 50px;'><strong>Welcome！My name is John，a residential and commercial real estate broker, affiliated with Re/Max, the top agency in Canada. With 10 years of experience in the industry, i take pride in my wide client base, filled with both local and international buyers/sellers.</strong></td></tr> <br></br>
-    <tr><td id="form-label-td" style='word-break: break-word;text-align:left;font-size:18px;font-family:Arial;width:10%;'>Last Name<span style='color:red;'>*</span></td><td id="form-span-td" style='width:30%;' ><input type='text' id="form-input-td" style='width:88%;box-sizing:border-box;border: 1px solid #ccc;border-radius: 5px;height:30px;'  maxlength='40' name='First Name' /></td></tr>
-    <tr><td id="form-label-td" style='word-break: break-word;text-align:left;font-size:18px;font-family:Arial;width:10%;'>First Name<span style='color:red;'>*</span></td><td id="form-span-td" style='width:30%;' ><input type='text' id="form-input-td" style='width:88%;box-sizing:border-box;border: 1px solid #ccc;border-radius: 5px;height:30px;'  maxlength='80' name='Last Name' /></td></tr>
-    <tr><td id="form-label-td" style='word-break: break-word;text-align:left;font-size:18px;font-family:Arial;width:10%;'>Email<span style='color:red;'>*</span></td><td id="form-span-td" style='width:30%;' ><input type='text' id="form-input-td" style='width:88%;box-sizing:border-box;border: 1px solid #ccc;border-radius: 5px;height:30px;'  maxlength='100' name='Email' /></td></tr>
-    <tr><td id="form-label-td" style='word-break: break-word;text-align:left;font-size:18px;font-family:Arial;width:10%;'>Phone</td><td id="form-span-td" style='width:30%;' ><input type='text' id="form-input-td" style='width:88%;box-sizing:border-box;border: 1px solid #ccc;border-radius: 5px;height:30px;'  maxlength='30' name='Mobile' /></td></tr>
-    <tr><td id="form-label-td" style='word-break: break-word;text-align:left;font-size:18px;font-family:Arial;width:10%;'>Company<span style='color:red;'>*</span></td><td id="form-span-td" style='width:30%;' ><input type='text' id="form-input-td" style='width:88%;box-sizing:border-box;border: 1px solid #ccc;border-radius: 5px;height:30px;'  maxlength='100' name='Company' /></td></tr>
-    <tr><td id="form-label-td" style='word-break: break-word;text-align:left;font-size:18px;font-family:Arial;width:10%;'>Comment</td><td id="form-span-td" style='width:30%;'> <textarea name='Description' maxlength='32000' id="form-input-td" style='width:88%;height: 110px;border: 1px solid #ccc;border-radius: 5px;'>&nbsp;</textarea></td></tr>
- 
-     <tr><td colspan='2' id="form-buttons" style='text-align:center; padding-top:15px;font-size:12px;'>
-         <input style='width:150px;margin-right: 5px;cursor: pointer;font-size:20px;padding: 14px 20px;margin: 8px 0;border: none;border-radius: 4px;background-color: #ff8080;color:white' id='formsubmit' type='submit' value='Submit'  ></input> <input id="reset-button" type='reset' name='reset' style='width:150px;margin-right: 5px;cursor: pointer;font-size:20px;padding: 14px 20px;margin: 8px 0;border: none;border-radius: 4px;background-color: #ff8080;color:white' value='Reset' ></input> </td></tr></table>
-
-   </form>
- </div>
-          </div>
-        
-      </div> <!-- / .container -->
-    </section>
-
-    <div id="replacer-box" style="width: 100%; display: none;"></div>
-
-    <!-- TESTIMONIALS
-    ================================================== -->
-    <section id="testimonial-section" class="pt-10 pt-md-12">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div id="testimonial-header" class="col-12 col-md-10 col-lg-8 text-center">
-
-            <!-- Heading -->
-            <h2>
-              Your Need is our First Priority
-            </h2>
-
-            <!-- Text -->
-            <p class="font-size-lg text-muted mb-7 mb-md-9">
-              
-            </p>
-
-          </div>
-        </div> <!-- / .row -->
-        <div class="row">
-          <div class="col-12">
-
-            <!-- Card -->
-            <div class="card card-row shadow-light-lg mb-6">
-              <div class="row no-gutters">
-                <div class="col-12 col-md-6">
-
-                  <!-- Slider -->
-                  <div class="card-img-slider" data-flickity='{"fade": true, "imagesLoaded": true, "pageDots": false, "prevNextButtons": false, "asNavFor": "#blogSlider", "draggable": false}'>
-                    <a class="card-img-left bg-cover" style="background-image: url(assets/img/photos/photo-1.jpg);" href="#!">
-
-                      <!-- Image (placeholder) -->
-                      <img src="assets/img/photos/photo-1.jpg" alt="..." id="review-iamge" class="img-fluid d-md-none invisible">
-
-                    </a>
-                    <a class="card-img-left bg-cover" style="background-image: url(assets/img/photos/photo-26.jpg);" href="#!">
-
-                      <!-- Image (placeholder) -->
-                      <img src="assets/img/photos/photo-26.jpg" alt="..." id="review-iamge" class="img-fluid d-md-none invisible">
-
-                    </a>
-                  </div>
-
-                  <!-- Shape -->
-                  <div class="shape shape-right shape-fluid-y svg-shim text-white d-none d-md-block">
-                    <svg viewBox="0 0 112 690" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M116 0H51V172C76 384 0 517 0 517V690H116V0Z" fill="currentColor"/>
-                    </svg>
-                  </div>
-
-                </div>
-                <div class="col-12 col-md-6 position-md-static">
-
-                  <!-- Slider -->
-                  <div class="position-md-static" data-flickity='{"wrapAround": true, "pageDots": false, "adaptiveHeight": true}' id="blogSlider">
-                    <div class="w-100">
-
-                      <!-- Body -->
-                      <div class="card-body">
-                        <blockquote class="blockquote text-center mb-0">
-
-                          <!-- Brand -->
-                          <div class="row justify-content-center mb-5 mb-md-7">
-                            <div class="col-6 col-sm-4 col-md-7 col-lg-5">
-
-                            </div>
-                          </div> <!-- / .row -->
-
-                          <!-- Text -->
-                          <p class="mb-5 mb-md-7">
-                            “Thanks to Mr.Li, i finally bought the home i wanted”
-                          </p>
-
-                          <!-- Footer -->
-                          <footer class="blockquote-footer">
-                            <span class="h6 text-uppercase">Alvin</span>
-                          </footer>
-
-                        </blockquote>
-                      </div>
-
+        <div class="header-topbar">
+            <!-- top-bar -->
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-4 col-lg-5 col-md-4 col-sm-6 col-6 d-none d-xl-block d-lg-block">
+                        <p class="mail-text">Welcome to Loaxmax Canada</p>
                     </div>
-                    <div class="w-100">
-
-                      <!-- Body -->
-                      <div class="card-body">
-                        <blockquote class="blockquote text-center mb-0">
-
-                          <!-- Brand -->
-                          <div class="row justify-content-center mb-5 mb-md-7">
-                            <div class="col-6 col-sm-4 col-md-7 col-lg-5">
-
-
-                            </div>
-                          </div> <!-- / .row -->
-
-                          <!-- Text -->
-                          <p class="mb-5 mb-md-7">
-                            “收入不够担心了好久的房贷终于批下来了，感谢Leo的帮忙！"
-                          </p>
-
-                          <!-- Footer -->
-                          <footer class="blockquote-footer">
-                            <span class="h6 text-uppercase">George S.</span>
-                          </footer>
-
-                        </blockquote>
-                      </div>
-
+                    <div class="col-xl-8 col-lg-7 col-md-12 col-sm-12 col-12 text-right">
+                        <div class="top-nav"> <span class="top-text"><a href="#!">View Locations</a> </span> <span class="top-text"><a href="#!">+1647-123-4567</a></span> <span class="top-text"><a href="#!">EMI calculator</a></span> </div>
                     </div>
-                  </div>
-
                 </div>
-              </div> <!-- / .row -->
             </div>
-
-          </div>
-        </div> <!-- / .row -->
-      </div> <!-- / .container -->
-    </section>
-
-    <!-- SHAPE
-    ================================================== -->
-    <div class="position-relative mt-n8">
-      <div class="shape shape-bottom shape-fluid-x svg-shim text-gray-200">
-        <svg viewBox="0 0 2880 480" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path fill-rule="evenodd" clip-rule="evenodd" d="M2160 0C1440 240 720 240 720 240H0V480H2880V0H2160Z" fill="currentColor"/>
-        </svg>
-      </div>
+        </div>
+        <!-- /.top-bar -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-white py-3">
+            <div class="container">
+                <a href="index.html" class="navbar-brand"><img src="images/loamax-logo.JPG" style="max-width:60%" alt="Loamax - Financial Company Website"></a>
+                <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="icon-bar top-bar mt-0"></span>
+                    <span class="icon-bar middle-bar"></span>
+                    <span class="icon-bar bottom-bar"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item dropdown">						   
+                            <a class="nav-link dropdown-toggle" href="loan-list.html" id="navbarBlog" role="button" aria-haspopup="true" aria-expanded="false">
+                                Loan
+                            </a>	
+                            <div class="dropdown-menu" aria-labelledby="navbarBlog">
+                                <a class="dropdown-item" href="home-loan.html">Home Loan</a>
+                                    <a class="dropdown-item" href="personal-loan.html">Personal Loan</a>
+                                    <a class="dropdown-item" href="student-loan.html">Student Loan</a>
+                                    <a class="dropdown-item" href="other-loan.html">Other Loan</a>
+                            </div>
+                        </li>
+						
+						<li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#!" id="navbarBlog" role="button" aria-haspopup="true" aria-expanded="false">
+                                Insurance
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarBlog">
+                                <a class="dropdown-item" href="life-insurance-list.html">Life Insurance</a>
+                                <a class="dropdown-item" href="travel-insurance-list.html">Travel Insurance</a>
+                            </div>
+                        </li>
+						
+						<!-- <li class="nav-item dropdown"> -->
+                            <!-- <a class="nav-link dropdown-toggle" href="#!" id="navbarBlog" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> -->
+                                <!-- Exchange -->
+                            <!-- </a> -->
+                            <!-- <div class="dropdown-menu" aria-labelledby="navbarBlog"> -->
+                                <!-- <a class="dropdown-item" href="blog-listing.html">Small Amount</a> -->
+                                <!-- <a class="dropdown-item" href="blog-two-column.html">Large Amount</a> -->
+                            <!-- </div> -->
+                        <!-- </li> -->
+						 
+                        <li class="nav-item">
+                             <a class="nav-link " href="exchange-home.html">
+                                    Exchange
+                             </a>
+                        </li>
+						 
+                        <li class="nav-item">
+                             <a class="nav-link " href="career-home.html">
+                                    Career
+                             </a>
+                        </li>
+						 
+                        <li class="nav-item">
+                             <a class="nav-link " href="about-us.html">
+                                    About us
+                                </a>
+                        </li>
+						 
+                        <li class="nav-item">
+                             <a class="nav-link " href="contact-us.html">
+                                    Contact us
+                                </a>
+                        </li>
+                    </ul>
+                    <div class="search-nav ml-lg-3 ml-0"> <a class="search-btn" role="button" data-toggle="collapse" href="#searchbar" aria-expanded="false"><i class="fa fa-search"></i></a> </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!-- /.navigation start-->
+    <!-- /.search start-->
+    <div class="slider" id="slider">
+        <!-- slider -->
+        
+        <div>
+            <div class="slider-img"><img src="./images/index-currency-exchange.jpg" alt="Borrow - Loan Company Website Template" class="">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
+                            <div class="slider-captions">
+                                <!-- slider-captions -->
+                                <h1 class="slider-title">Trustet Financial Service Provider<strong class="text-highlight"></strong> </h1>
+                                <p class="slider-text d-none d-xl-block d-lg-block d-sm-block"> We provide an excellent foreign exchange. Guranteed transfer for under 50k in 24 hours.</p>
+                                <a href="#!" class="btn btn-secondary">Check Eligiblity</a>
+                            </div>
+                            <!-- /.slider-captions -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="slider-img"><img src="./images/index-student-loan.jpg" alt="Borrow - Loan Company Website Template" class="">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
+                            <div class="slider-captions">
+                                <!-- slider-captions -->
+                                <h1 class="slider-title">Student Loans with Great Rates <strong class="text-highlight">6.00%</strong></h1>
+                                <p class="slider-text d-none d-xl-block d-lg-block d-sm-block">We provide an excellent service for all types of loans in
+                                    <br> ahmedabad and offer service, advice and direction.</p>
+                                <a href="#!" class="btn btn-secondary ">View Products</a>
+                            </div>
+                            <!-- /.slider-captions -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+		<div>
+            <div class="slider-img"><img src="./images/index-home-loan.jpg" alt="Borrow - Loan Company Website Template" class="">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
+                            <div class="slider-captions">
+                                <!-- slider-captions -->
+                                <h1 class="slider-title">Home Loan Starting From <strong class="text-highlight">2.00%</strong></h1>
+                                <p class="slider-text d-none d-xl-block d-lg-block d-sm-block">We provide an excellent service for home buyers in
+                                    <br> ahmedabad and offer service, advice and direction.</p>
+                                <a href="#!" class="btn btn-secondary ">View Products</a>
+                            </div>
+                            <!-- /.slider-captions -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+		<div class="slider-img"><img src="./images/index-currency-exchange.jpg" alt="Borrow - Loan Company Website Template" class="">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
+                        <div class="slider-captions">
+                            <!-- slider-captions -->
+                            <h1 class="slider-title">Secure and Trusted Exchange Service </h1>
+                            <p class="slider-text d-none d-xl-block d-lg-block d-sm-block">The low rate you need for the need you want! Call
+                                <br>
+                                <strong class="text-highlight">(555) 123-4567</strong></p>
+                            <a href="team.html" class="btn btn-secondary">Loan Products</a>
+                        </div>
+                        <!-- /.slider-captions -->
+                    </div>
+                </div>
+            </div>
+        </div>
+		
+    </div>
+    <div class="rate-table">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-6">
+                    <div class="rate-counter-block">
+                        <div class="icon rate-icon  "> <img src="images/mortgage.svg" alt="Borrow - Loan Company Website Template" class="icon-svg-1x"></div>
+                        <div class="rate-box">
+                            <h1 class="loan-rate">3.00%</h1>
+                            <small class="rate-title">Mortgage</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-6">
+                    <div class="rate-counter-block">
+                        <div class="icon rate-icon  "> <img src="images/loan.svg" alt="Borrow - Loan Company Website Template" class="icon-svg-1x"></div>
+                        <div class="rate-box">
+                            <h1 class="loan-rate">8.00%</h1>
+                            <small class="rate-title">Personal Loans</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-6">
+                    <div class="rate-counter-block">
+                        <div class="icon rate-icon  "> <img src="images/credit-card.svg" alt="Borrow - Loan Company Website Template" class="icon-svg-1x"></div>
+                        <div class="rate-box">
+                            <h1 class="loan-rate">6.00%</h1>
+                            <small class="rate-title">Student Loans</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-6">
+                    <div class="rate-counter-block">
+                        <div class="icon rate-icon  "> <img src="images/car.svg" alt="Borrow - Loan Company Website Template" class="icon-svg-1x"></div>
+                        <div class="rate-box">
+                            <h1 class="loan-rate">0.00%</h1>
+                            <small class="rate-title">FOREX</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section-space80">
+        <div class="container">
+            <div class="row">
+                <div class="offset-xl-2 col-xl-8 offset-md-2 col-md-8 offset-md-2 col-md-8 col-sm-12 col-12">
+                    <div class="mb60 text-center section-title">
+                        <!-- section title start-->
+                        <h1>Financial Solutions at Loamax</h1>
+                        <p>We will match you with a program that meet your financial need. We strive to make funds available to them <strong>within 24 hours of application.</strong></p>
+                    </div>
+                    <!-- /.section title start-->
+                </div>
+            </div>
+            <div class="row">
+                <div class="service" id="service">
+                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                        <div class="bg-white pinside40 service-block outline mb30">
+                            <div class="icon mb40"> <img src="images/car.svg" alt="Borrow - Loan Company Website Template" class="icon-svg-2x"> </div>
+                            <h2><a href="personal-loan.html" class="title">Personal Loan</a></h2>
+                            <p>Lorem ipsum dolor sit ameectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis </p>
+                            <a href="personal-loan.html" class="btn-link">Read More</a>
+                        </div>
+                    </div>
+                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                        <div class="bg-white pinside40 service-block outline mb30">
+                            <div class="icon mb40"> <img src="images/mortgage.svg" alt="Borrow - Loan Company Website Template" class="icon-svg-2x"></div>
+                            <h2><a href="home-loan.html" class="title">Home Mortgage</a></h2>
+                            <p>Sed ut perspiciatis unde omnis rror sit voluptatem accusan tium dolo remque laudantium, totam rem aperiam, eaque ipsa </p>
+                            <a href="home-loan.html" class="btn-link">Read More</a>
+                        </div>
+                    </div>
+                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                        <div class="bg-white pinside40 service-block outline mb30">
+                            <div class="icon mb40"> <img src="images/piggy-bank.svg" alt="Borrow - Loan Company Website Template" class="icon-svg-2x"></div>
+                            <h2><a href="student-loan.html" class="title">Education Loan</a></h2>
+                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elmodo ligula eget dolor. Aenean massa. Cum sociis natoque</p>
+                            <a href="student-loan.html" class="btn-link">Read More</a>
+                        </div>
+                    </div>
+                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                        <div class="bg-white pinside40 service-block outline mb30">
+                            <div class="icon mb40"> <img src="images/loan.svg" alt="Borrow - Loan Company Website Template" class="icon-svg-2x"></div>
+                            <h2><a href="#!" class="title">Business Loan</a></h2>
+                            <p>Lorem ipsum dolor sit nean commodo ligula eget dolor simple dummyum sociis natoque.amet, consectetuer adipiscing  </p>
+                            <a href="#!" class="btn-link">Read More</a>
+                        </div>
+                    </div>
+                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                        <div class="bg-white pinside40 service-block outline mb30">
+                            <div class="icon mb40"> <img src="images/loan.svg" alt="Borrow - Loan Company Website Template" class="icon-svg-2x"></div>
+                            <h2><a href="exchange-home.html" class="title">Exchange</a></h2>
+                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis</p>
+                            <a href="exchange-home.html" class="btn-link">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bg-white section-space80">
+        <div class="container">
+            <div class="row">
+                <div class="offset-xl-2 col-xl-8 offset-md-2 col-md-8 offset-md-2 col-md-8 col-sm-12 col-12">
+                    <div class="mb100 text-center section-title">
+                        <!-- section title start-->
+                        <h1>Fast &amp; Easy Application Process.</h1>
+                        <p>Suspendisse aliquet varius nunc atcibus lacus sit amet coed portaeri sque mami luctus viveed congue lobortis faucibus.</p>
+                    </div>
+                    <!-- /.section title start-->
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-12">
+                    <div class="bg-white pinside40 number-block outline mb60 bg-boxshadow">
+                        <div class="circle"><span class="number">1</span></div>
+                        <h3 class="number-title mb-1">Choose Amount</h3>
+                        <p>Suspendisse accumsan imperdue ligula dignissim sit amet vestibulum in mollis etfelis.</p>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-12">
+                    <div class="bg-white pinside40 number-block outline mb60 bg-boxshadow">
+                        <div class="circle"><span class="number">2</span></div>
+                        <h3 class="number-title mb-1">Approved Your Loan</h3>
+                        <p>Fusce tempor sstibulum varius sem nec mi luctus viverra edcongue lobortis faucibus.</p>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-12">
+                    <div class="bg-white pinside40 number-block outline mb60 bg-boxshadow">
+                        <div class="circle"><span class="number">3</span></div>
+                        <h3 class="number-title mb-1">Get Your Cash</h3>
+                        <p>Get your money in minutes simtibulm varius semnec mluctus gue lobortis faucibus.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="offset-xl-2 col-xl-8 offset-md-2 col-md-8 offset-md-2 col-md-8 col-sm-12 col-12 text-center"> <a href="#!" class="btn btn-secondary">View Our Loans</a> </div>
+            </div>
+        </div>
     </div>
 
-    <!-- SHAPE
-    ================================================== -->
-    <div class="position-relative">
-      <div class="shape shape-bottom shape-fluid-x svg-shim text-gray-200">
-        <svg viewBox="0 0 2880 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M0 48H1437.5H2880V0H2160C1442.5 52 720 0 720 0H0V48Z" fill="currentColor"/>
-        </svg>
-      </div>
+    <div class="section-space80 bg-white" style="background-color: #f4f6f8!important">
+        <div class="container">
+            <div class="row">
+                <div class="offset-xl-2 col-xl-8 offset-md-2 col-md-8 offset-md-2 col-md-8 col-sm-12 col-12">
+                    <div class="mb60 text-center section-title">
+                        <!-- section title-->
+                        <h1>We are Here to Help You</h1>
+                        <p>Our mission is to deliver reliable, latest news and opinions.</p>
+                    </div>
+                    <!-- /.section title-->
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
+                    <div class="bg-white bg-boxshadow pinside40 outline text-center mb30">
+                        <div class="mb40"><i class="icon-calendar-3 icon-2x icon-default"></i></div>
+                        <h2 class="capital-title">Apply For Loan</h2>
+                        <p>Looking to buy a car or home loan? then apply for loan now.</p>
+                        <a href="#!" class="btn-link">Get Appointment</a>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
+                    <div class="bg-white bg-boxshadow pinside40 outline text-center mb30">
+                        <div class="mb40"><i class="icon-phone-call icon-2x icon-default"></i></div>
+                        <h2 class="capital-title">Call us at </h2>
+                        <h1 class="text-big">800-123-456 / 789 </h1>
+                        <p>lnfo@loanadvisor.com</p>
+                        <a href="#!" class="btn-link">Contact us</a>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
+                    <div class="bg-white bg-boxshadow pinside40 outline text-center mb30">
+                        <div class="mb40"> <i class="icon-users icon-2x icon-default"></i></div>
+                        <h2 class="capital-title">Talk to Advisor</h2>
+                        <p>Need to loan advise? Talk to our Loan advisors.</p>
+                        <a href="#!" class="btn-link">Meet The Advisor</a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
+   <div class="footer section-space100">
+    <!-- footer -->
+    <div class="container ">
+        <div class="row ">
+            <div class="col-xl-4 col-lg-4 d-md-none col-sm-12 col-12  ">
+                <div class="footer-logo ">
+                    <!-- Footer Logo -->
+                    <img src="images/ft-logo.png " alt="Borrow - Loan Company Website Templates ">
+                </div>
+                <!-- /.Footer Logo -->
+            </div>
+            <div class="col-xl-8 col-lg-8 col-md-12 col-sm-12 col-12 ">
+                <div class="row ">
+                    <div class="col-xl-5 col-lg-5 col-md-5 col-sm-12 col-12 ">
+                        <h3 class="newsletter-title ">Signup Our Newsletter</h3>
+                    </div>
+                    <div class="col-xl-7 col-lg-7 col-md-7 col-sm-12 col-12 ">
+                        <div class="newsletter-form ">
+                            <!-- Newsletter Form -->
+                            <form action="newsletter.php" method="post">
+                                <div class="input-group">
+                                    <input type="email" class="form-control border-0 shadow-none" id="newsletter" 
+                                    name="newsletter" placeholder="Write E-Mail Address" required>
+                                    <span class="input-group-btn">
+                                        <button class="btn btn-secondary" type="submit">Go!</button>
+                                    </span>
+                                </div>
+                                <!-- /input-group -->
+                            </form>
+                        </div>
+                        <!-- /.Newsletter Form -->
+                    </div>
+                </div>
+                <!-- /.col-lg-6 -->
+            </div>
+        </div>
+        <hr class="dark-line ">
+        <div class="row ">
+            <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12 ">
+                <div class="widget-text mt40 ">
+                    <!-- widget text -->
+                    <p>Our goal at Loamax Company is to provide access to personal loans and education loan, car loan, home loan at insight competitive interest rates lorem ipsums. We are the loan provider, you can use our loan product.</p>
+                    <div class="row ">
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6 ">
+                            <p class="address-text "><span><i class="icon-placeholder-3 icon-1x "></i> </span>2021 Union Road Elington, 56476 </p>
+                        </div>
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6 ">
+                            <p class="call-text "><span><i class="icon-phone-call icon-1x "></i></span>800-123-456</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- /.widget text -->
+            </div>
+            <div class="col-xl-2 col-lg-2 col-md-4 col-sm-6 col-6 ">
+                <div class="widget-footer mt40 ">
+                    <!-- widget footer -->
+                    <ul class="listnone ">
+                        <li><a href="# ">Home</a></li>
+                        <li><a href="# ">Services</a></li>
+                        <li><a href="# ">About Us</a></li>
+                        <li><a href="# ">News</a></li>
+                        <li><a href="# ">Faq</a></li>
+                        <li><a href="# ">Contact Us</a></li>
+                    </ul>
+                </div>
+                <!-- /.widget footer -->
+            </div>
+            <div class="col-xl-2 col-lg-2 col-md-4 col-sm-6 col-6 ">
+                <div class="widget-footer mt40 ">
+                    <!-- widget footer -->
+                    <ul class="listnone ">
+                        <li><a href="# ">Car Loan</a></li>
+                        <li><a href="# ">Personal Loan</a></li>
+                        <li><a href="# ">Education Loan</a></li>
+                        <li><a href="# ">Business Loan</a></li>
+                        <li><a href="# ">Home Loan</a></li>
+                        <li><a href="# ">Debt Consolidation</a></li>
+                    </ul>
+                </div>
+                <!-- /.widget footer -->
+            </div>
+            <div class="col-xl-2 col-lg-2 col-md-4 col-sm-6 col-6 ">
+              <div class="widget-social mt40 ">
+                        <!-- widget footer -->
+                        <ul class="listnone ">
+                            <li><a href="#!"><i class="fab fa-facebook-f "></i>Facebook</a></li>
+                            <li><a href="#!"><i class="fab fa-google-plus "></i>Google Plus</a></li>
+                            <li><a href="#!"><i class="fab fa-twitter "></i>Twitter</a></li>
+                            <li><a href="#!"><i class="fab fa-linkedin "></i>Linked In</a></li>
+                        </ul>
+                    </div>
+                <!-- /.widget footer -->
+            </div>
+        </div>
+    </div>
+</div>
+    <!-- /.footer -->
+    <div class="tiny-footer">
+        <!-- tiny footer -->
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6">
+                    <p>© Copyright 2021 | Loamax Loan Company</p>
+                </div>
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6 text-right">
+                    <p>Terms of use | Privacy Policy</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- back to top icon -->
+    <a href="#0" class="cd-top" title="Go to top">Top</a>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- slider script -->
+    <script src="js/owl.carousel.min.js"></script>    
+    <script src="js/main.js"></script>
+    <!-- Back to top script -->
+    <script src="js/back-to-top.js"></script>
+   
+</body>
 
-    <!-- FOOTER
-    ================================================== -->
-    <footer id="footerid" class="py-8 py-md-11 bg-gray-200">
-      <div class="container">
-        <div class="row">
-          <div id="footer-image" class="col-12 col-md-4 col-lg-3">
-        
-            <!-- Brand -->
-            <img src="./assets/img/tombros/logo.png" alt="..." id="footer-lion-logo" class="footer-brand img-fluid mb-2" style="margin-left: -50px; max-width: 120%;">
-
-            <!-- Text -->
-            <p class="text-gray-700 mb-2">
-              专业一站式 贷款服务. 
-            </p>
-
-          </div>
-      
-          <div id="footer-links" class="col-6 col-md-4 col-lg-2" style="margin-top: 26px;">
-        
-            <!-- Heading -->
-            <!-- <h6 class="font-weight-bold text-uppercase text-gray-700">
-              Legal
-            </h6> -->
-
-            <!-- List -->
-            <ul class="list-unstyled text-muted mb-0">
-              <li class="mb-3">
-                <a href="#!" class="text-reset">
-                  关于我们
-                </a>
-              </li>
-              <li class="mb-3">
-                <a href="#!" class="text-reset">
-                  常见问题
-                </a>
-              </li>
-              <li>
-                <a href="#!" class="text-reset">
-                  联系我们
-                </a>
-              </li>
-            </ul>
-
-          </div>
-
-          <div id="footer-contact" class="Contact" style="margin-top:25px; margin-left:-28px; width: 455px;">
-        
-            <!-- Heading -->
-            <!-- <h6 class="font-weight-bold text-uppercase text-gray-700">
-              Legal
-            </h6> -->
-
-            <!-- List -->
-            <ul>
-              <li style="list-style-type: none;">
-                <a href="#!" class="text-reset" style="color: #869ab8;">
-                  Bro Li (M10021092)
-                </a>
-              </li>
-              <li style="list-style-type: none;">
-                <a href="#!" class="text-reset" style="color: #869ab8;">
-                  Cell: 666-123-7890
-                </a>
-              </li>
-              <li style="list-style-type: none;">
-                <a href="#!" class="text-reset" style="color: #869ab8;">
-                  WeChat: JetBruh
-                </a>
-              </li>
-              <li style="list-style-type: none;">
-                <a href="#!" class="text-reset" style="color: #869ab8;">
-                  Email: 12345@gmail.com
-                </a>
-              </li>
-              <li style="list-style-type: none;">
-                <a href="#!" class="text-reset" style="color: #869ab8;">
-                  Address: 111 - 1111 Jigjig Ave 
-                  <br>Northoak, L1A5D3
-                </a>
-              </li>
-            </ul>
-
-          </div>
-
-          <img src="./assets/img/tombros/QRCode1.jpg" style="align-self: right; margin-left: -45px; margin-top: 24px;" id="footer-logo" class="navbar-brand-img" alt="...">
-
-        </div> <!-- / .row -->
-
-      </div> <!-- / .container -->
-    </footer>
-
-    <!-- JAVASCRIPT
-    ================================================== -->
-    <!-- Libs JS -->
-    <script src="./assets/libs/jquery/dist/jquery.min.js"></script>
-    <script src="./assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="./assets/libs/flickity/dist/flickity.pkgd.min.js"></script>
-    <script src="./assets/libs/flickity-fade/flickity-fade.js"></script>
-    <script src="./assets/libs/aos/dist/aos.js"></script>
-    <script src="./assets/libs/smooth-scroll/dist/smooth-scroll.min.js"></script>
-    <script src="./assets/libs/jarallax/dist/jarallax.min.js"></script>
-    <script src="./assets/libs/jarallax/dist/jarallax-video.min.js"></script>
-    <script src="./assets/libs/jarallax/dist/jarallax-element.min.js"></script>
-    <script src="./assets/libs/typed.js/lib/typed.min.js"></script>
-    <script src="./assets/libs/countup.js/dist/countUp.min.js"></script>
-    <script src="./assets/libs/highlightjs/highlight.pack.min.js"></script>
-    <script src="./assets/libs/@fancyapps/fancybox/dist/jquery.fancybox.min.js"></script>
-    <script src="./assets/libs/isotope-layout/dist/isotope.pkgd.min.js"></script>
-    <script src="./assets/libs/imagesloaded/imagesloaded.pkgd.min.js"></script>
-
-    <!-- Map -->
-    <script src='https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.js'></script>
-
-    <!-- Theme JS -->
-    <script src="./assets/js/theme.min.js"></script>
-
-    <script>
-        function openForm() {
-          document.getElementById("crmWebToEntityForm").style.display = "block";
-        }
-        
-        function closeForm() {
-          document.getElementById("crmWebToEntityForm").style.display = "none";
-        }
-
-    var mndFileds=new Array('Company','First Name','Last Name','Email');
-    var fldLangVal=new Array('Company','First Name','Last Name','Email'); 
-   var name='';
-   var email='';
-
-    function checkMandatory4287662000000323001() {
-   for(i=0;i<mndFileds.length;i++) {
-     var fieldObj=document.forms['WebToLeads4287662000000323001'][mndFileds[i]];
-     if(fieldObj) {
-     if (((fieldObj.value).replace(/^\s+|\s+$/g, '')).length==0) {
-      if(fieldObj.type =='file')
-       { 
-        alert('Please select a file to upload.'); 
-        fieldObj.focus(); 
-        return false;
-       } 
-     alert(fldLangVal[i] +' cannot be empty.'); 
-               fieldObj.focus();
-               return false;
-     }  else if(fieldObj.nodeName=='SELECT') {
-              if(fieldObj.options[fieldObj.selectedIndex].value=='-None-') {
-       alert(fldLangVal[i] +' cannot be none.'); 
-       fieldObj.focus();
-       return false;
-        }
-     } else if(fieldObj.type =='checkbox'){
-         if(fieldObj.checked == false){
-       alert('Please accept  '+fldLangVal[i]);
-       fieldObj.focus();
-       return false;
-        } 
-      } 
-      try {
-          if(fieldObj.name == 'Last Name') {
-       name = fieldObj.value;
-            }
-     } catch (e) {}
-       }
-   }
-   document.getElementById('formsubmit').disabled=true;
- }
-</script>
-
-<script type="text/javascript">
-var $zoho=$zoho || {};$zoho.salesiq = $zoho.salesiq || 
-{widgetcode:"d0be5dbafe487b680c5a24a90f4eca9c4dfaff8b240ffd3d81ac205a5b44af3c", values:{},ready:function(){}};
-var d=document;s=d.createElement("script");s.type="text/javascript";s.id="zsiqscript";s.defer=true;
-s.src="https://salesiq.zoho.com/widget";t=d.getElementsByTagName("script")[0];t.parentNode.insertBefore(s,t);d.write("<div id='zsiqwidget'></div>");
-</script>
-
-  </body>
 </html>
