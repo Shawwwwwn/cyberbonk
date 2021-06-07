@@ -542,7 +542,10 @@ Section Space
 }
 
 .section-space40 {
-  padding-top: 40px;
+  margin-top: -10px;
+  padding-top: 0px;
+  padding-left: 40px;
+  padding-right: 30px;
   padding-bottom: 40px;
 }
 
