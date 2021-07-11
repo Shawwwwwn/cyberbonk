@@ -51,9 +51,9 @@ if ($('#slider-range-min , #slider-range-max').length) {
     $(function() {
         $("#slider-range-min").slider({
             range: "min",
-            value: 3000,
-            min: 1000,
-            max: 5000,
+            value: 500000,
+            min: 100000,
+            max: 1000000,
             slide: function(event, ui) {
                 $("#amount").val("$" + ui.value);
             }
@@ -64,7 +64,7 @@ if ($('#slider-range-min , #slider-range-max').length) {
         $("#slider-range-max").slider({
             range: "min",
             min: 1,
-            max: 10,
+            max: 20,
             value: 2,
 
             slide: function(event, ui) {
@@ -75,6 +75,20 @@ if ($('#slider-range-min , #slider-range-max').length) {
     });
 }
 
+if ($('#slider-range-min-int').length) {
+    $(function() {
+        $("#slider-range-min-int").slider({
+            range: "min",
+            value: 30,
+            min: 10,
+            max: 50,
+            slide: function(event, ui) {
+                $("#interest").val("0." + ui.value + "%");
+            }
+        });
+        $("#interest").val("0." + $("#slider-range-min-int").slider("value") + "%");
+    });
+}
 
 
 
