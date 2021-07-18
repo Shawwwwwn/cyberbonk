@@ -24,7 +24,7 @@
    
 </head>
 
-<body>
+<body onload="calcM()">
     <div class="sticky-top">
         <div class="collapse searchbar" id="searchbar">
             <div class="search-area bg-white">
@@ -55,7 +55,7 @@
                         <p class="mail-text">欢迎来到朗迈金融</p>
                     </div>
                     <div class="col-xl-8 col-lg-7 col-md-12 col-sm-12 col-12 text-right">
-                        <div class="top-nav"> <span class="top-text"><a href="#!">公司地址</a> </span> <span class="top-text"><a href="#!">+1647-123-4567</a></span> <span class="top-text"><a href="#!">贷款计算</a></span> </div>
+                        <div class="top-nav"> <span class="top-text"><a href="#!">N-500, 675 Cochrane Dr. Markham ON</a> </span> <span class="top-text"><a href="#!">+1 647-994-8508</a></span> <span class="top-text"><a href="#!">欢迎咨询</a></span> </div>
                     </div>
                 </div>
             </div>
@@ -162,7 +162,9 @@
                         <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
                             <div class="slider-captions">
                                 <!-- slider-captions -->
-                                <h1 class="slider-title">房 屋 贷 款 利 率<br>最 低 至 <strong class="text-highlight">3.00%</strong></h1>
+                                <div>
+								    <h1 class="slider-title">房 屋 贷 款 利 率<br>最 低 至 <strong class="text-highlight">1.45%</strong><strong class="text-highlight" style="font-size:10px">&nbsp;&nbsp;subject to change</strong></h1>
+								</div>
                                 <p class="slider-text d-none d-xl-block d-lg-block d-sm-block">无论是现有房屋装修还是购置新的房产<br>朗迈金融致力于解决您的各种房屋贷款需求</p>
                                 <a href="home-loan.html" class="btn btn-secondary ">了 解 更 多 详 情</a>
                             </div>
@@ -180,8 +182,8 @@
                         <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
                             <div class="slider-captions">
                                 <!-- slider-captions -->
-                                <h1 class="slider-title">留 学 生 消 费 贷 款 利 率<br>最 低 至 <strong class="text-highlight">5.00%</strong></h1>
-                                <p class="slider-text d-none d-xl-block d-lg-block d-sm-block">朗迈致力于为广大留学生提供各种贷款服务，最短24小时内发放贷款</p>
+                                <h1 class="slider-title">留 学 生 消 费 贷 款 利 率<br>利 率 优 惠 | 快 速 放 款 <strong class="text-highlight"></strong></h1>
+                                <p class="slider-text d-none d-xl-block d-lg-block d-sm-block">为有学签的留学生提供消费短期贷款服务，当日放款，还款灵活<br>&nbsp;</p>
                                 <a href="student-loan.html" class="btn btn-secondary ">了 解 更 多 详 情</a>
                             </div>
                             <!-- /.slider-captions -->
@@ -192,7 +194,7 @@
         </div>
 		
     </div>
-    <div class="rate-table">
+    <div class="rate-table" style="display:none">
         <div class="container">
             <div class="row">
                 <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-6">
@@ -253,7 +255,7 @@
                         <div class="bg-white pinside40 service-block outline mb30">
                             <div class="icon mb40"> <img src="images/car.svg" alt="Borrow - Loan Company Website Template" class="icon-svg-2x"> </div>
                             <h2><a href="personal-loan.html" class="title">私人抵押贷款</a></h2>
-                            <p>Lorem ipsum dolor sit ameectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis </p>
+                            <p>为个人提供房屋等短期抵押贷款服务，利率优惠，最快48小时之内放款，还款灵活<br>&nbsp;</p>
                             <a href="personal-loan.html" class="btn-link">了解更多</a>
                         </div>
                     </div>
@@ -261,7 +263,7 @@
                         <div class="bg-white pinside40 service-block outline mb30">
                             <div class="icon mb40"> <img src="images/mortgage.svg" alt="Borrow - Loan Company Website Template" class="icon-svg-2x"></div>
                             <h2><a href="home-loan.html" class="title">房屋贷款</a></h2>
-                            <p>Sed ut perspiciatis unde omnis rror sit voluptatem accusan tium dolo remque laudantium, totam rem aperiam, eaque ipsa </p>
+                            <p>为个人提供房屋贷款疑难杂症解决方案，提供凭收入贷款，自雇贷款，新移民贷款，非居民贷款等服务</p>
                             <a href="home-loan.html" class="btn-link">了解更多</a>
                         </div>
                     </div>
@@ -269,24 +271,16 @@
                         <div class="bg-white pinside40 service-block outline mb30">
                             <div class="icon mb40"> <img src="images/piggy-bank.svg" alt="Borrow - Loan Company Website Template" class="icon-svg-2x"></div>
                             <h2><a href="student-loan.html" class="title">留学生消费贷款</a></h2>
-                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elmodo ligula eget dolor. Aenean massa. Cum sociis natoque</p>
+                            <p>为有学签的留学生提供消费短期贷款服务。利率优惠，当日放款，还款灵活<br>&nbsp;</p>
                             <a href="student-loan.html" class="btn-link">了解更多</a>
                         </div>
                     </div>
                     <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
                         <div class="bg-white pinside40 service-block outline mb30">
                             <div class="icon mb40"> <img src="images/loan.svg" alt="Borrow - Loan Company Website Template" class="icon-svg-2x"></div>
-                            <h2><a href="#!" class="title">本地无抵押贷款</a></h2>
-                            <p>Lorem ipsum dolor sit nean commodo ligula eget dolor simple dummyum sociis natoque.amet, consectetuer adipiscing  </p>
+                            <h2><a href="#!" class="title">本地个人贷款</a></h2>
+                            <p>为本地个人提供短期无抵押贷款服务。 利率优惠， 最快当日放款，还款灵活<br>&nbsp;</p>
                             <a href="#!" class="btn-link">了解更多</a>
-                        </div>
-                    </div>
-                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
-                        <div class="bg-white pinside40 service-block outline mb30">
-                            <div class="icon mb40"> <img src="images/loan.svg" alt="Borrow - Loan Company Website Template" class="icon-svg-2x"></div>
-                            <h2><a href="exchange-home.html" class="title">外汇兑换</a></h2>
-                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis</p>
-                            <a href="exchange-home.html" class="btn-link">了解更多</a>
                         </div>
                     </div>
                 </div>
@@ -301,57 +295,49 @@
                                 <div class="row">
                                     <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
                                         <div class="section-title mb60 text-center">
-                                            <h1><b>告 诉 我 们 您 的 贷 款 需 求</b></h1>
-                                            <p>Now apply for a Car Loan online, All you need to do is provide your details below application form.</p>
+                                            <h1><b>计 算 您 的 房 屋 贷 款</b></h1>
+                                            <p>根据不同的贷款总额，时长与汇率，计算您每月还款数额</p>
                                         </div>
                                     </div>
                                 </div>
+								
                                 <div class="row">
                                     <div class="col-md-12">
                                         <form class="">
                                             <fieldset>
                                                 <!-- Text input-->
                                                 <div class="row">
-                                                <div class="form-group col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12">
-                                                    <label class="control-label" for="name">姓 名</label>
+                                                
+                                                <div class="form-group col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12 slide-ranger">
+                                                    <p id="slider-range-min"></p>
+                                                    <label class="control-label">贷 款 金 额 ($)</label>
+                                                    <input type="text" id="amount" class="form-control" onblur="calcM()">
+                                                </div>
+                                                <div class="form-group col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12 slide-ranger">
+                                                    <p id="slider-range-max"></p>
+                                                    <label class="control-label">还 款 年 限</label>
+                                                    <input type="text" id="j" class="form-control" onblur="calcM()">
+                                                </div>
+												
+												<div class="form-group col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12">
+                                                    <label class="control-label" for="interest">利 率 （%）</label>
                                                     <div class="">
-                                                        <input id="name" name="name" type="text" placeholder="Name" class="form-control input-md" required>
+                                                        <input id="interest" type="text" value="3.00" onblur="calcM()" class="form-control input-md" required>
                                                         <span class="help-block"> </span> </div>
                                                 </div>
                                                 <!-- Text input-->
                                                 <div class="form-group col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12">
-                                                    <label class=" control-label" for="email">邮 箱 地 址</label>
+                                                    <label class=" control-label">每 月 还 贷 金 额 ($)</label>
                                                     <div class="">
-                                                        <input id="email" name="email" type="text" placeholder="E-mail" class="form-control input-md">
+                                                        <input id="monthlyPay" type="text" class="form-control input-md">
                                                     </div>
                                                 </div>
-                                                <!-- Text input-->
-                                                <div class="form-groupcol-xl-4 col-lg-4 col-md-12 col-sm-12 col-12">
-                                                    <label class="control-label" for="phone">电 话 号 码</label>
-                                                    <div class="">
-                                                        <input id="phone" name="phone" type="text" placeholder="Phone" class="form-control">
-                                                    </div>
-                                                </div>
-                                                <div class="form-group col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12 slide-ranger">
-                                                    <p id="slider-range-min"></p>
-                                                    <label for="amount" class="control-label">贷 款 金 额</label>
-                                                    <input type="text" id="amount" readonly class="form-control">
-                                                </div>
-                                                <div class="form-group col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12 slide-ranger">
-                                                    <p id="slider-range-max"></p>
-                                                    <label for="amount" class="control-label">还 款 年 限</label>
-                                                    <input type="text" id="j" readonly class="form-control">
-                                                </div>
-												<div class="form-group col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12 slide-ranger">
-                                                    <p id="slider-range-min-int"></p>
-                                                    <label for="amount" class="control-label">贷 款 利 率</label>
-                                                    <input type="text" id="interest" readonly class="form-control">
-                                                </div>
-												
+																	
                                                 <!-- Button -->
                                                 <div class="form-group col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12">
+												    <label class="control-label">&nbsp;</label>
                                                     <div class="">
-                                                        <button id="Submit" name="Submit" class="btn btn-primary btn-block">提 交 贷 款 申 请</button>
+                                                        <button class="btn btn-primary btn-block" onclick="calcSum()">联 系 我 们</button>
                                                     </div>
                                                 </div>
                                             </div>
@@ -370,7 +356,7 @@
                 <div class="offset-xl-2 col-xl-8 offset-md-2 col-md-8 offset-md-2 col-md-8 col-sm-12 col-12">
                     <div class="mb60 text-center section-title">
                         <!-- section title start-->
-                        <h1><b>其 他 金 融 服 务</b></h1>
+                        <h1><b>快 速 申 请 通 道</b></h1>
                         <p>朗迈金融集团资源涉及加拿大各省，直接对话各大银行，金融机构，由多位资深并拥有信贷及保险资质的精英经纪组成， 力求为我们的客户做到 <strong>100%成功的信贷及保险等各项服务</strong></p>
                     </div>
                     <!-- /.section title start-->
@@ -381,43 +367,36 @@
                     <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
                         <div class="bg-white pinside40 service-block outline mb30">
                             <div class="icon mb40"> <img src="images/car.svg" alt="Borrow - Loan Company Website Template" class="icon-svg-2x"> </div>
-                            <h2><a href="personal-loan.html" class="title">私人抵押贷款</a></h2>
-                            <p>Lorem ipsum dolor sit ameectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis </p>
-                            <a href="personal-loan.html" class="btn-link">了解更多</a>
-                        </div>
-                    </div>
-                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
-                        <div class="bg-white pinside40 service-block outline mb30">
-                            <div class="icon mb40"> <img src="images/mortgage.svg" alt="Borrow - Loan Company Website Template" class="icon-svg-2x"></div>
-                            <h2><a href="home-loan.html" class="title">房屋贷款</a></h2>
-                            <p>Sed ut perspiciatis unde omnis rror sit voluptatem accusan tium dolo remque laudantium, totam rem aperiam, eaque ipsa </p>
-                            <a href="home-loan.html" class="btn-link">了解更多</a>
-                        </div>
-                    </div>
-                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
-                        <div class="bg-white pinside40 service-block outline mb30">
-                            <div class="icon mb40"> <img src="images/piggy-bank.svg" alt="Borrow - Loan Company Website Template" class="icon-svg-2x"></div>
-                            <h2><a href="student-loan.html" class="title">留学生消费贷款</a></h2>
-                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elmodo ligula eget dolor. Aenean massa. Cum sociis natoque</p>
-                            <a href="student-loan.html" class="btn-link">了解更多</a>
-                        </div>
-                    </div>
-                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
-                        <div class="bg-white pinside40 service-block outline mb30">
-                            <div class="icon mb40"> <img src="images/loan.svg" alt="Borrow - Loan Company Website Template" class="icon-svg-2x"></div>
-                            <h2><a href="#!" class="title">本地无抵押贷款</a></h2>
-                            <p>Lorem ipsum dolor sit nean commodo ligula eget dolor simple dummyum sociis natoque.amet, consectetuer adipiscing  </p>
-                            <a href="#!" class="btn-link">了解更多</a>
+                            <h2><a href="personal-loan.html" class="title">贷款服务</a></h2>
+                            <p>为个人提供各类贷款疑难杂症解决方案</p>
+                            <a href="loan-list.html" class="btn-link">了解更多</a>
                         </div>
                     </div>
                     <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
                         <div class="bg-white pinside40 service-block outline mb30">
                             <div class="icon mb40"> <img src="images/loan.svg" alt="Borrow - Loan Company Website Template" class="icon-svg-2x"></div>
                             <h2><a href="exchange-home.html" class="title">外汇兑换</a></h2>
-                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis</p>
+                            <p>正规MSB账户出款，安全快速<br>&nbsp;</p>
                             <a href="exchange-home.html" class="btn-link">了解更多</a>
                         </div>
                     </div>
+                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                        <div class="bg-white pinside40 service-block outline mb30">
+                            <div class="icon mb40"> <img src="images/piggy-bank.svg" alt="Borrow - Loan Company Website Template" class="icon-svg-2x"></div>
+                            <h2><a href="student-loan.html" class="title">保险服务</a></h2>
+                            <p>加拿大人寿保险， 旅游保险服务</p>
+                            <a href="insurance-list.html" class="btn-link">了解更多</a>
+                        </div>
+                    </div>
+                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                        <div class="bg-white pinside40 service-block outline mb30">
+                            <div class="icon mb40"> <img src="images/loan.svg" alt="Borrow - Loan Company Website Template" class="icon-svg-2x"></div>
+                            <h2><a href="#!" class="title">培训招聘</a></h2>
+                            <p>朗迈长期为各大金融机构提供培训招聘服务</p>
+                            <a href="career-home.html" class="btn-link">了解更多</a>
+                        </div>
+                    </div>
+                    
                 </div>
             </div>
         </div>

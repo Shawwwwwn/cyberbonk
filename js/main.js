@@ -25,6 +25,20 @@ $(".dropdown-menu a.dropdown-toggle").on("click", function(e) {
 });
 
 }
+
+// test function
+
+function calcM(){
+    let P = document.getElementById('amount').value;
+	let n = document.getElementById('j').value*12;
+	let r = document.getElementById('interest').value/(100*12);
+    let m = ((1+Number(r))**Number(n))*Number(r)*Number(P)/((1+Number(r))**Number(n)-1);
+	//let m = p ( r * ( 1 + r )**n ) / ( ( 1 + r )**n – 1 )
+    //let m = Number(p) ( Number(r) * (( 1 + Number(r) )**Number(n)) ) / ( ( 1 + Number(r) )**Number(n) – 1 );
+	//alert("Starting function calcM");
+    document.getElementById('monthlyPay').value = m.toFixed(1);
+}
+
 // accordion js
 
 if ($('.collapse').length) {
@@ -55,17 +69,17 @@ if ($('#slider-range-min , #slider-range-max').length) {
             min: 100000,
             max: 1000000,
             slide: function(event, ui) {
-                $("#amount").val("$" + ui.value);
+                $("#amount").val(ui.value);
             }
         });
-        $("#amount").val("$" + $("#slider-range-min").slider("value"));
+        $("#amount").val($("#slider-range-min").slider("value"));
     });
     $(function() {
         $("#slider-range-max").slider({
             range: "min",
-            min: 1,
-            max: 20,
-            value: 2,
+            min: 5,
+            max: 30,
+            value: 20,
 
             slide: function(event, ui) {
                 $("#j").val(ui.value);
@@ -75,18 +89,18 @@ if ($('#slider-range-min , #slider-range-max').length) {
     });
 }
 
-if ($('#slider-range-min-int').length) {
+if ($('#slider-range-min-intt').length) {
     $(function() {
-        $("#slider-range-min-int").slider({
+        $("#slider-range-min-intt").slider({
             range: "min",
             value: 30,
             min: 10,
             max: 50,
             slide: function(event, ui) {
-                $("#interest").val("0." + ui.value + "%");
+                $("#interestt").val("0." + ui.value + "%");
             }
         });
-        $("#interest").val("0." + $("#slider-range-min-int").slider("value") + "%");
+        $("#interestt").val("0." + $("#slider-range-min-intt").slider("value") + "%");
     });
 }
 
@@ -172,9 +186,4 @@ if ($('#post-gallery , .slider , .service ').length) {
         pagination: false
 
     });
-
-
-
-
-
 }
