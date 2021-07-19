@@ -55,7 +55,7 @@
                         <p class="mail-text">欢迎来到朗迈金融</p>
                     </div>
                     <div class="col-xl-8 col-lg-7 col-md-12 col-sm-12 col-12 text-right">
-                        <div class="top-nav"> <span class="top-text"><a href="#!">N-500, 675 Cochrane Dr. Markham ON</a> </span> <span class="top-text"><a href="#!">+1 647-994-8508</a></span> <span class="top-text"><a href="#!">欢迎咨询</a></span> </div>
+                        <div class="top-nav"> <span class="top-text"><a href="#!">N-500, 675 Cochrane Dr. Markham ON</a> </span> <span class="top-text"><a href="#!">+1 647-675-8871</a></span> <span class="top-text"><a href="#!">欢迎咨询</a></span> </div>
                     </div>
                 </div>
             </div>
@@ -84,12 +84,12 @@
                         </li>
 						
 						<li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#!" id="navbarBlog" role="button" aria-haspopup="true" aria-expanded="false">
+                            <a class="nav-link dropdown-toggle" href="insurance-list.html" id="navbarBlog" role="button" aria-haspopup="true" aria-expanded="false">
                                 保险
                             </a>
                             <div class="dropdown-menu" aria-labelledby="navbarBlog">
-                                <a class="dropdown-item" href="life-insurance-list.html">人身保险</a>
-                                <a class="dropdown-item" href="travel-insurance-list.html">旅游保险</a>
+                                <a class="dropdown-item" href="life-insurance.html">人身保险</a>
+                                <a class="dropdown-item" href="travel-insurance.html">旅游保险</a>
                             </div>
                         </li>
 						
@@ -163,7 +163,7 @@
                             <div class="slider-captions">
                                 <!-- slider-captions -->
                                 <div>
-								    <h1 class="slider-title">房 屋 贷 款 利 率<br>最 低 至 <strong class="text-highlight">1.45%</strong><strong class="text-highlight" style="font-size:10px">&nbsp;&nbsp;subject to change</strong></h1>
+								    <h1 class="slider-title">房 屋 贷 款 利 率<br>最 低 至 <strong class="text-highlight">1.45%</strong><strong class="text-highlight" style="font-size:10px">&nbsp;&nbsp;*subject to change</strong></h1>
 								</div>
                                 <p class="slider-text d-none d-xl-block d-lg-block d-sm-block">无论是现有房屋装修还是购置新的房产<br>朗迈金融致力于解决您的各种房屋贷款需求</p>
                                 <a href="home-loan.html" class="btn btn-secondary ">了 解 更 多 详 情</a>
@@ -251,15 +251,8 @@
             </div>
             <div class="row">
                 <div class="service" id="service">
-                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
-                        <div class="bg-white pinside40 service-block outline mb30">
-                            <div class="icon mb40"> <img src="images/car.svg" alt="Borrow - Loan Company Website Template" class="icon-svg-2x"> </div>
-                            <h2><a href="personal-loan.html" class="title">私人抵押贷款</a></h2>
-                            <p>为个人提供房屋等短期抵押贷款服务，利率优惠，最快48小时之内放款，还款灵活<br>&nbsp;</p>
-                            <a href="personal-loan.html" class="btn-link">了解更多</a>
-                        </div>
-                    </div>
-                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+				
+				    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
                         <div class="bg-white pinside40 service-block outline mb30">
                             <div class="icon mb40"> <img src="images/mortgage.svg" alt="Borrow - Loan Company Website Template" class="icon-svg-2x"></div>
                             <h2><a href="home-loan.html" class="title">房屋贷款</a></h2>
@@ -267,6 +260,16 @@
                             <a href="home-loan.html" class="btn-link">了解更多</a>
                         </div>
                     </div>
+				
+                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                        <div class="bg-white pinside40 service-block outline mb30">
+                            <div class="icon mb40"> <img src="images/car.svg" alt="Borrow - Loan Company Website Template" class="icon-svg-2x"> </div>
+                            <h2><a href="personal-loan.html" class="title">私人抵押贷款</a></h2>
+                            <p>为个人提供房屋等短期抵押贷款服务，利率优惠，最快48小时之内放款，还款灵活<br>&nbsp;</p>
+                            <a href="personal-loan.html" class="btn-link">了解更多</a>
+                        </div>
+                    </div>           
+					
                     <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
                         <div class="bg-white pinside40 service-block outline mb30">
                             <div class="icon mb40"> <img src="images/piggy-bank.svg" alt="Borrow - Loan Company Website Template" class="icon-svg-2x"></div>
@@ -309,20 +312,20 @@
                                                 <div class="row">
                                                 
                                                 <div class="form-group col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12 slide-ranger">
-                                                    <p id="slider-range-min"></p>
+                                                    <p id="slider-range-min" onclick="calcM()"></p>
                                                     <label class="control-label">贷 款 金 额 ($)</label>
-                                                    <input type="text" id="amount" class="form-control" onblur="calcM()">
+                                                    <input type="text" id="amount" class="form-control" onclick="calcM()" onblur="calcM()">
                                                 </div>
                                                 <div class="form-group col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12 slide-ranger">
-                                                    <p id="slider-range-max"></p>
+                                                    <p id="slider-range-max" onclick="calcM()"></p>
                                                     <label class="control-label">还 款 年 限</label>
-                                                    <input type="text" id="j" class="form-control" onblur="calcM()">
+                                                    <input type="text" id="j" class="form-control" onclick="calcM()" onblur="calcM()">
                                                 </div>
 												
 												<div class="form-group col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12">
                                                     <label class="control-label" for="interest">利 率 （%）</label>
                                                     <div class="">
-                                                        <input id="interest" type="text" value="3.00" onblur="calcM()" class="form-control input-md" required>
+                                                        <input id="interest" type="text" value="3.00" onclick="calcM()" onblur="calcM()" class="form-control input-md" required>
                                                         <span class="help-block"> </span> </div>
                                                 </div>
                                                 <!-- Text input-->
@@ -528,10 +531,10 @@
                     <p>朗迈金融集团有限公司成立于2019年，位于加拿大安大略省多伦多市，是一家为海外华人，加拿大新移民及留学生提供信贷服务、人寿保险与旅游保险、人力资源服务等的大型专业金融科技有限公司。</p>
                     <div class="row ">
                         <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6 ">
-                            <p class="address-text "><span><i class="icon-placeholder-3 icon-1x "></i> </span>2021 Union Road Elington, 56476 </p>
+                            <p class="address-text "><span><i class="icon-placeholder-3 icon-1x "></i> </span>N-500, 675 Cochrane Dr. Markham ON</p>
                         </div>
                         <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6 ">
-                            <p class="call-text "><span><i class="icon-phone-call icon-1x "></i></span>800-123-456</p>
+                            <p class="call-text "><span><i class="icon-phone-call icon-1x "></i></span>+1 647-675-8871</p>
                         </div>
                     </div>
                 </div>
@@ -565,7 +568,7 @@
                 </div>
                 <!-- /.widget footer -->
             </div>
-            <div class="col-xl-2 col-lg-2 col-md-4 col-sm-6 col-6 ">
+            <div class="col-xl-2 col-lg-2 col-md-4 col-sm-6 col-6 " style="display:none">
               <div class="widget-social mt40 ">
                         <!-- widget footer -->
                         <ul class="listnone ">
