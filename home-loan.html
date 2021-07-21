@@ -82,12 +82,12 @@
                         </li>
 						
 						<li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#!" id="navbarBlog" role="button" aria-haspopup="true" aria-expanded="false">
+                            <a class="nav-link dropdown-toggle" href="insurance-list.html" id="navbarBlog" role="button" aria-haspopup="true" aria-expanded="false">
                                 保险
                             </a>
                             <div class="dropdown-menu" aria-labelledby="navbarBlog">
-                                <a class="dropdown-item" href="life-insurance-list.html">人身保险</a>
-                                <a class="dropdown-item" href="travel-insurance-list.html">旅游保险</a>
+                                <a class="dropdown-item" href="life-insurance.html">人身保险</a>
+                                <a class="dropdown-item" href="travel-insurance.html">旅游保险</a>
                             </div>
                         </li>
 						
@@ -136,8 +136,8 @@
                 <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
                     <div class="page-breadcrumb">
                         <ol class="breadcrumb">
-                            <li><a href="#!">主页</a></li>
-                            <li><a href="#!">贷款服务</a></li>
+                            <li><a href="index.html">主页</a></li>
+                            <li><a href="loan-list.html">贷款服务</a></li>
                             <li class="active">房屋贷款</li>
                         </ol>
                     </div>
@@ -158,7 +158,7 @@
 										</div>
                                     </div>
                                     <div class="col-xl-9 col-lg-9 col-md-12 col-sm-12 col-12">
-                                        <div class="btn-action"> <a href="contact-us.html" class="btn btn-primary">联 系 我 们</a> <a href="#!" class="btn btn-secondary"> 现 在 申 请 </a> </div>
+                                        <div class="btn-action"> <a href="contact-us.html" class="btn btn-secondary">联 系 我 们</a></div>
                                     </div>
                                 </div>
                             </div>
@@ -202,7 +202,6 @@
 						<div class="section-space40 bg-white">
                             <div class="container">
                                 <div class="row">
-                                    <div class="col-xl-2 col-lg-2 col-md-4 col-sm-6 col-6 mb-2"> <img src="images/rbc-center.svg" alt="Borrow - Loan Company Website Template"> </div>
                                     <div class="col-xl-2 col-lg-2 col-md-4 col-sm-6 col-6 mb-2"> <img src="images/Scotiabank.svg" alt="Borrow - Loan Company Website Template"> </div>
                                     <div class="col-xl-2 col-lg-2 col-md-4 col-sm-6 col-6 mb-2"> <img src="images/NeiH.png" alt="Borrow - Loan Company Website Template"> </div>
                                     <div class="col-xl-2 col-lg-2 col-md-4 col-sm-6 col-6 mb-2"> <img src="images/Ginkgo.png" alt="Borrow - Loan Company Website Template"> </div>
@@ -254,7 +253,7 @@
                                 <div class="offset-xl-1 col-xl-10 col-lg-12 col-md-12 col-12">
                                 <h1 class="text-white mb-4">无论您有什么贷款需求，我们都有解决方案</h1>
 
-                                <a href="#!" class="btn btn-secondary">咨 询 房 贷 服 务 详 情</a> 
+                                <a href="contact-us.html" class="btn btn-secondary">咨 询 房 贷 服 务 详 情</a> 
                             </div></div>
                         </div>
                         <div class="section-scroll" id="section-feature">
@@ -306,7 +305,7 @@
                                     <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
                                         <div class="section-title mb60 text-center">
                                             <h1><b>告 诉 我 们 您 的 贷 款 需 求</b></h1>
-                                            <p>Now apply for a Car Loan online, All you need to do is provide your details below application form.</p>
+                                            <p>根据不同的贷款总额，时长与汇率，计算您每月还款数额</p>
                                         </div>
                                     </div>
                                 </div>
@@ -316,41 +315,37 @@
                                             <fieldset>
                                                 <!-- Text input-->
                                                 <div class="row">
-                                                <div class="form-group col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12">
-                                                    <label class="control-label" for="name">姓 名</label>
+                                                
+                                                <div class="form-group col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12 slide-ranger">
+                                                    <p id="slider-range-min" onclick="calcM()"></p>
+                                                    <label class="control-label">贷 款 金 额 ($)</label>
+                                                    <input type="text" id="amount" class="form-control" onclick="calcM()" onblur="calcM()">
+                                                </div>
+                                                <div class="form-group col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12 slide-ranger">
+                                                    <p id="slider-range-max" onclick="calcM()"></p>
+                                                    <label class="control-label">还 款 年 限</label>
+                                                    <input type="text" id="j" class="form-control" onclick="calcM()" onblur="calcM()">
+                                                </div>
+												
+												<div class="form-group col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12">
+                                                    <label class="control-label" for="interest">利 率 （%）</label>
                                                     <div class="">
-                                                        <input id="name" name="name" type="text" placeholder="Name" class="form-control input-md" required>
+                                                        <input id="interest" type="text" value="3.00" onclick="calcM()" onblur="calcM()" class="form-control input-md" required>
                                                         <span class="help-block"> </span> </div>
                                                 </div>
                                                 <!-- Text input-->
                                                 <div class="form-group col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12">
-                                                    <label class=" control-label" for="email">邮 箱 地 址</label>
+                                                    <label class=" control-label">每 月 还 贷 金 额 ($)</label>
                                                     <div class="">
-                                                        <input id="email" name="email" type="text" placeholder="E-mail" class="form-control input-md">
+                                                        <input id="monthlyPay" type="text" class="form-control input-md">
                                                     </div>
                                                 </div>
-                                                <!-- Text input-->
-                                                <div class="form-groupcol-xl-4 col-lg-4 col-md-12 col-sm-12 col-12">
-                                                    <label class="control-label" for="phone">电 话 号 码</label>
-                                                    <div class="">
-                                                        <input id="phone" name="phone" type="text" placeholder="Phone" class="form-control">
-                                                    </div>
-                                                </div>
-                                                <div class="form-group col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12 slide-ranger">
-                                                    <p id="slider-range-min"></p>
-                                                    <label for="amount" class="control-label">贷 款 金 额</label>
-                                                    <input type="text" id="amount" readonly class="form-control">
-                                                </div>
-                                                <div class="form-group col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12 slide-ranger">
-                                                    <p id="slider-range-max"></p>
-                                                    <label for="amount" class="control-label">还 款 年 限</label>
-                                                    <input type="text" id="j" readonly class="form-control">
-                                                </div>
-												
+																	
                                                 <!-- Button -->
                                                 <div class="form-group col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12">
+												    <label class="control-label">&nbsp;</label>
                                                     <div class="">
-                                                        <button id="Submit" name="Submit" class="btn btn-primary btn-block">提 交 贷 款 申 请</button>
+                                                        <button class="btn btn-primary btn-block" onclick="calcSum()">联 系 我 们</button>
                                                     </div>
                                                 </div>
                                             </div>
@@ -367,7 +362,7 @@
                                      <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
                                         <div class="section-title mb60">
                                             <h2><b>贷 款 流 程 中 的 常 见 问 题</b></h2>
-                                            <p>If you have a question that deals with clients, customers or the public in general, there is bound to be a need for the FAQ page. </p>
+                                            <p>针对您可能有的关于房贷的问题，我们在小红书平台上发布了各种专业讲解视频</p>
                                         </div>
                                     </div>
                                 </div>
