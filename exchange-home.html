@@ -6,44 +6,62 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <meta name="description" content="Borrow - is the loan company, Business Loan Website Template.">
-    <meta name="keywords" content="Business Loan, Small Business Loans, Credit, EMI Calculator, bad credit">
+    <meta name="description" content="Borrow - is the loan company, Business Website Template.">
+    <meta name="keywords" content="Financial Website Template, Bootstrap Template, Loan Product, Personal Loan">
     <title>Loamax - Financial Solutions for Everyone</title>
     <!-- Bootstrap -->
     <link href="css/bootstrap/bootstrap.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
     <link href="css/fontello.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="css/jquery-ui.css">
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700%7CMerriweather:300,300i,400,400i,700,700i" rel="stylesheet">
     <!-- owl Carousel Css -->
     <link href="css/owl.carousel.css" rel="stylesheet">
     <link href="css/owl.theme.css" rel="stylesheet">
-    <!-- Flaticon -->
-    <link href="css/flaticon.css" rel="stylesheet">
-    <link href="css/magnific-popup.css" rel="stylesheet">
     <link href="css/navbar.css" rel="stylesheet">
-    
+    <link rel="stylesheet" type="text/css" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+   
 </head>
 
-<body>
-  <div class="sticky-top">
+<body onload="calcM()">
+    <div class="sticky-top">
+        <div class="collapse searchbar" id="searchbar">
+            <div class="search-area bg-white">
+                <div class="container">
+                    <div class="row">
+                        <div class="offset-lg-3 col-lg-6 col-md-12 col-sm-12 col-12">
+                            <div class="input-group">
+                                <input type="text" class="form-control" placeholder="Search for...">
+                                <span class="input-group-btn">
+                                    <button class="btn btn-secondary" type="button">Go!</button>
+                                </span>
+                                <div class="btn-close">
+                                    <a class="close " aria-label="Close" data-toggle="collapse" href="#searchbar" aria-expanded="false">
+                                        <span aria-hidden="true" class="fas fa-times"></span></a></div>
+                            </div>
+                            <!-- /input-group -->
+                        </div>
+                        <!-- /.col-lg-6 -->
+                    </div>
+                </div>
+            </div>
+        </div>
         <div class="header-topbar">
             <!-- top-bar -->
             <div class="container">
                 <div class="row">
                     <div class="col-xl-4 col-lg-5 col-md-4 col-sm-6 col-6 d-none d-xl-block d-lg-block">
-                        <p class="mail-text">Welcome to Loaxmax Canada</p>
+                        <p class="mail-text">欢迎来到朗迈金融</p>
                     </div>
                     <div class="col-xl-8 col-lg-7 col-md-12 col-sm-12 col-12 text-right">
-                        <div class="top-nav"> <span class="top-text"><a href="#!">View Locations</a> </span> <span class="top-text"><a href="#!">+1647-123-4567</a></span> <span class="top-text"><a href="#!">EMI calculator</a></span> </div>
+                        <div class="top-nav"> <span class="top-text"><a href="#!">N-500, 675 Cochrane Dr. Markham ON</a> </span> <span class="top-text"><a href="#!">+1 647-675-8871</a></span> <span class="top-text"><a href="#!">欢迎咨询</a></span> </div>
                     </div>
                 </div>
             </div>
         </div>
         <!-- /.top-bar -->
-<nav class="navbar navbar-expand-lg navbar-light bg-white py-3">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white py-3">
             <div class="container">
                 <a href="index.html" class="navbar-brand"><img src="images/loamax-logo.JPG" style="max-width:60%" alt="Loamax - Financial Company Website"></a>
                 <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -55,23 +73,23 @@
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item dropdown">						   
                             <a class="nav-link dropdown-toggle" href="loan-list.html" id="navbarBlog" role="button" aria-haspopup="true" aria-expanded="false">
-                                Loan
+                                贷款
                             </a>	
                             <div class="dropdown-menu" aria-labelledby="navbarBlog">
-                                <a class="dropdown-item" href="home-loan.html">Home Loan</a>
-                                    <a class="dropdown-item" href="personal-loan.html">Personal Loan</a>
-                                    <a class="dropdown-item" href="student-loan.html">Student Loan</a>
-                                    <a class="dropdown-item" href="other-loan.html">Other Loan</a>
+                                <a class="dropdown-item" href="home-loan.html">房屋贷款</a>
+                                    <a class="dropdown-item" href="personal-loan.html">私人抵押贷款</a>
+                                    <a class="dropdown-item" href="student-loan.html">留学生消费贷款</a>
+                                    <a class="dropdown-item" href="other-loan.html">本地无抵押贷款</a>
                             </div>
                         </li>
 						
 						<li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="insurance-home.html" id="navbarBlog" role="button" aria-haspopup="true" aria-expanded="false">
-                                Insurance
+                            <a class="nav-link dropdown-toggle" href="insurance-list.html" id="navbarBlog" role="button" aria-haspopup="true" aria-expanded="false">
+                                保险
                             </a>
                             <div class="dropdown-menu" aria-labelledby="navbarBlog">
-                                <a class="dropdown-item" href="life-insurance.html">Life Insurance</a>
-                                <a class="dropdown-item" href="travel-insurance.html">Travel Insurance</a>
+                                <a class="dropdown-item" href="life-insurance.html">人身保险</a>
+                                <a class="dropdown-item" href="travel-insurance.html">旅游保险</a>
                             </div>
                         </li>
 						
@@ -87,25 +105,25 @@
 						 
                         <li class="nav-item">
                              <a class="nav-link " href="exchange-home.html">
-                                    Exchange
+                                    外汇兑换
                              </a>
                         </li>
 						 
                         <li class="nav-item">
                              <a class="nav-link " href="career-home.html">
-                                    Career
+                                    求职咨询
                              </a>
                         </li>
 						 
                         <li class="nav-item">
                              <a class="nav-link " href="about-us.html">
-                                    About us
+                                    关于我们
                                 </a>
                         </li>
 						 
                         <li class="nav-item">
                              <a class="nav-link " href="contact-us.html">
-                                    Contact us
+                                    联系我们
                                 </a>
                         </li>
                     </ul>
@@ -114,139 +132,30 @@
             </div>
         </nav>
     </div>
+    <!-- /.navigation start-->
+    <!-- /.search start-->
+    
+	
+    <div class="bg-white section-space80" style="background-color:#f4f6f8!important">
+        <div class="container">
+            <div class="row">
+                <div style="margin-bottom: -80px" class="offset-xl-2 col-xl-8 offset-md-2 col-md-8 offset-md-2 col-md-8 col-sm-12 col-12">
+                    <div class="mb100 text-center section-title">
+                        <!-- section title start-->
+                        <h1>页 面 正 在 建 设 中</h1>
+                        <p>服务详情请您点击下方链接咨询我们</p>
+                    </div>
+                    <!-- /.section title start-->
+                </div>
+            </div>
 
-        <div class="slider" id="slider">
-            <!-- slider -->
-            <div>
-                <div class="student-slider-img"><img src="./images/exchange-banner-1.jpg" alt="Borrow - Loan Company Website Template" class="">
-                    <div class="container">
-                        <div class="col-xl-8 col-lg-8 col-md-12 col-sm-12 col-12">
-                            <div class="slider-captions">
-                                <!-- slider-captions -->
-                                <h1 class="slider-title">Government Registered Exchange Service</h1>
-                                <p class="slider-text d-none d-xl-block d-lg-block d-md-block">We Have Been Serving International Clients All Over The World for 10+ Years</p>
-                            </div>
-                            <!-- /.slider-captions -->
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="student-slider-img"><img src="./images/exchange-banner-2.jpg" alt="Borrow - Loan Company Website Template" class="">
-                <div class="container">
-                    <div class="col-xl-8 col-lg-8 col-md-12 col-sm-12 col-12">
-                        <div class="slider-captions">
-                            <!-- slider-captions -->
-                            <h1 class="slider-title">Industrially Recognized Transfer Process</h1>
-                            <p class="slider-text d-none d-xl-block d-lg-block d-md-block">Our legal and financial professionals ensure the safety of your asset</p>
-                        </div>
-                        <!-- /.slider-captions -->
-                    </div>
-                </div>
-            </div>
-            
-        </div>
-        <div class="feature-list-bar mt-20">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-6 ">
-                        <p><i class="fas fa-check-circle fa-success"></i> Transfer within 24 hours </p>
-                    </div>
-                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-6 ">
-                        <p><i class="fas fa-check-circle fa-success"></i> Up-To-Date Rates</p>
-                    </div>
-                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-6 ">
-                        <p><i class="fas fa-check-circle fa-success"></i> No guarantors </p>
-                    </div>
-                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-6 ">
-                        <p><i class="fas fa-check-circle fa-success"></i> Minimum documentation</p>
-                    </div>
-                </div>
+            <div class="row">
+                <div class="offset-xl-2 col-xl-8 offset-md-2 col-md-8 offset-md-2 col-md-8 col-sm-12 col-12 text-center"> <a href="contact-us.html" class="btn btn-secondary">联 系 我 们</a> </div>
             </div>
         </div>
-        <div class="section-space80 bg-white " style="background-color:#f4f6f8!important">
-            <div class="container">
-                <div class="row">
-                    <div class="offset-xl-2 col-xl-8 offset-md-2 col-md-8 offset-md-2 col-md-8 col-sm-12 col-12">
-                        <div class="section-title mb60 text-center">
-                            <!-- section title start-->
-                            <h1>Loamax Exchange Service</h1>
-                            <p>We serve our customers with highest standard of service and professionalism
-                            </p>
-                        </div>
-                        <!-- /.section title start-->
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
-                        <div class="feature feature-bg">
-                            <div class="feature-icon bg-primary-light"><i class="fas fa-bolt text-primary"></i></div>
-                            <div class="feature-content">
-                                <h3>Instant Processing </h3>
-                                <p>Duis massa duilobortis vitae elitet acurusa felis sed arcu sagittis commodo.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
-                        <div class="feature feature-bg">
-                            <div class="feature-icon bg-default-light"><i class="fas fa-sync text-default"></i></div>
-                            <div class="feature-content">
-                                <h3>Secure Transfer</h3>
-                                <p>Pelle ntesque habitant morbi trist ique ses uada fa mes lacust feugiat metus. </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
-                        <div class="feature feature-bg">
-                            <div class="feature-icon bg-warning-light"><i class="fas fa-wine-glass-alt text-warning"></i></div>
-                            <div class="feature-content">
-                                <h3>100% Transparency</h3>
-                                <p>Aenean quis neque ac enim ferm entum feugiaro masla ndit tellus non cursus varius.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+    </div>
 
-        <div class="section-space80 bg-white" style="padding-bottom:106px">
-            <div class="container">
-                <div class="row">
-                    <div class="offset-xl-2 col-xl-8 offset-md-2 col-md-8 offset-md-2 col-md-8 col-sm-12 col-12">
-                        <div class="section-title mb60 text-center">
-                            <!-- section title start-->
-                            <h1>About Currency Exchange and How does it work</h1>
-                            <p>Cras nunc leo, bibendum at sapien nec, tempus aliquet turpis. </p>
-                        </div>
-                        <!-- /.section title start-->
-                    </div>
-                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
-                        <p class="lead"> Donec ullamcorper magna non orci scele risque consect enean ornare lectus nunc, elementum fermentum erat mattis id.
-                        </p>
-                        <p>Mauris fermentum ipsum in dolor sollicitudin, scelerisque placeed. Aliquam feugiat at odio at consectetur.</p>
-                        <p>In nec lacinia nisi. Cras at orci suscipit, sodales libero vitae, rhoncus lectus. Quisque congue leo pharetra sapien pellentesque varius.</p>
-                        <a href="#!" class="btn btn-primary mb-3 mb-lg-0">Contact Us Now</a>
-                    </div>
-                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
-                        <div class="section-about-video">
-                            <div class="about-img" style="background: url(./images/currency-exchange-illus.png); background-size: cover; background-repeat: no-repeat; min-height: 335px; display: flex; justify-content: center;">
-                                <div class="d-flex align-items-center">
-                                    
-                                    <a
-                  class="popup-youtube
-                                       text-decoration-none"
-                  href="https://www.youtube.com/watch?v=JRzWRZahOVU"
-                >
-                 <img src="images/play-icon.png" alt="Borrow - Loan Company Responsive Website Templates">
-                </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-       <div class="footer section-space100">
+   <div class="footer section-space100">
     <!-- footer -->
     <div class="container ">
         <div class="row ">
@@ -260,17 +169,17 @@
             <div class="col-xl-8 col-lg-8 col-md-12 col-sm-12 col-12 ">
                 <div class="row ">
                     <div class="col-xl-5 col-lg-5 col-md-5 col-sm-12 col-12 ">
-                        <h3 class="newsletter-title ">Signup Our Newsletter</h3>
+                        <h3 class="newsletter-title ">订 阅 朗 迈 的 金 融 资 讯</h3>
                     </div>
                     <div class="col-xl-7 col-lg-7 col-md-7 col-sm-12 col-12 ">
                         <div class="newsletter-form ">
                             <!-- Newsletter Form -->
-                            <form action="newsletter.php" method="post">
+                            <form action="https://formspree.io/f/meqvrkez" method="post">
                                 <div class="input-group">
-                                    <input type="email" class="form-control border-0 shadow-none" id="newsletter"
-                                     name="newsletter" placeholder="Write E-Mail Address" required>
+                                    <input type="email" class="form-control border-0 shadow-none" id="newsletter" 
+                                    name="newsletter" placeholder="邮 箱 地 址" required>
                                     <span class="input-group-btn">
-                                        <button class="btn btn-secondary" type="submit">Go!</button>
+                                        <button class="btn btn-secondary" type="submit">订 阅</button>
                                     </span>
                                 </div>
                                 <!-- /input-group -->
@@ -287,13 +196,13 @@
             <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12 ">
                 <div class="widget-text mt40 ">
                     <!-- widget text -->
-                    <p>Our goal at Borrow Loan Company is to provide access to personal loans and education loan, car loan, home loan at insight competitive interest rates lorem ipsums. We are the loan provider, you can use our loan product.</p>
+                    <p>朗迈金融集团有限公司成立于2019年，位于加拿大安大略省多伦多市，是一家为海外华人，加拿大新移民及留学生提供信贷服务、人寿保险与旅游保险、人力资源服务等的大型专业金融科技有限公司。</p>
                     <div class="row ">
                         <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6 ">
-                            <p class="address-text "><span><i class="icon-placeholder-3 icon-1x "></i> </span>3895 Sycamore Road Arlington, 97812 </p>
+                            <p class="address-text "><span><i class="icon-placeholder-3 icon-1x "></i> </span>N-500, 675 Cochrane Dr. Markham ON</p>
                         </div>
                         <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6 ">
-                            <p class="call-text "><span><i class="icon-phone-call icon-1x "></i></span>800-123-456</p>
+                            <p class="call-text "><span><i class="icon-phone-call icon-1x "></i></span>+1 647-675-8871</p>
                         </div>
                     </div>
                 </div>
@@ -303,12 +212,9 @@
                 <div class="widget-footer mt40 ">
                     <!-- widget footer -->
                     <ul class="listnone ">
-                        <li><a href="# ">Home</a></li>
-                        <li><a href="# ">Services</a></li>
-                        <li><a href="# ">About Us</a></li>
-                        <li><a href="# ">News</a></li>
-                        <li><a href="# ">Faq</a></li>
-                        <li><a href="# ">Contact Us</a></li>
+                        <li><a href="index.html">主页</a></li>  
+                        <li><a href="about-us.html">关于我们</a></li>
+                        <li><a href="contact-us.html">联系我们</a></li>
                     </ul>
                 </div>
                 <!-- /.widget footer -->
@@ -317,17 +223,16 @@
                 <div class="widget-footer mt40 ">
                     <!-- widget footer -->
                     <ul class="listnone ">
-                        <li><a href="# ">Car Loan</a></li>
-                        <li><a href="# ">Personal Loan</a></li>
-                        <li><a href="# ">Education Loan</a></li>
-                        <li><a href="# ">Business Loan</a></li>
-                        <li><a href="# ">Home Loan</a></li>
-                        <li><a href="# ">Debt Consolidation</a></li>
+                        <li><a href="loan-list.html">贷款服务</a></li>
+						<li><a href="insurance-list.html">保险服务</a></li>
+						<li><a href="exchange-home.html">换汇服务</a></li>
+						<li><a href="career-home.html">求职服务</a></li>
                     </ul>
                 </div>
                 <!-- /.widget footer -->
             </div>
-            <div class="col-xl-2 col-lg-2 col-md-4 col-sm-6 col-6 ">
+			
+            <div class="col-xl-2 col-lg-2 col-md-4 col-sm-6 col-6 " style="display:none">
               <div class="widget-social mt40 ">
                         <!-- widget footer -->
                         <ul class="listnone ">
@@ -342,34 +247,37 @@
         </div>
     </div>
 </div>
-        <!-- /.footer -->
-        <div class="tiny-footer">
-            <!-- tiny footer -->
-            <div class="container">
-                <div class="row">
-                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6">
-                        <p>© Copyright 2020 | Borrow Loan Company</p>
-                    </div>
-                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6 text-right">
-                        <p>Terms of use | Privacy Policy</p>
-                    </div>
+    <!-- /.footer -->
+    <div class="tiny-footer">
+        <!-- tiny footer -->
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6">
+                    <p>© Copyright 2021 | Loamax Loan Company</p>
+                </div>
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6 text-right">
+                    <p>Terms of use | Privacy Policy</p>
                 </div>
             </div>
         </div>
-        <!-- back to top icon -->
-        <a href="#0" class="cd-top" title="Go to top">Top</a>
-        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-        <script src="js/jquery.min.js"></script>
-        <!-- Include all compiled plugins (below), or include individual files as needed -->
-        <script src="js/bootstrap/js/bootstrap.bundle.min.js"></script>       
-        <!-- slider script -->
-        <script src="js/owl.carousel.min.js"></script>   
-        <script src="js/jquery.magnific-popup.min.js"></script>
-        <script src="js/video.js"></script>
-        <!-- Back to top script -->
-        <script src="js/back-to-top.js"></script>
-        <script src="js/jquery-ui.js"></script>
-        <script src="js/main.js"></script>
+    </div>
+    <!-- back to top icon -->
+    <a href="#0" class="cd-top" title="Go to top">Top</a>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap/js/bootstrap.bundle.min.js"></script>   
+    <script src="js/main.js"></script>   
+    <script src="js/owl.carousel.min.js"></script> 
+    <!-- slider script -->   
+    <script src="js/main.js"></script>
+    <!-- one page scroling navigation -->
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/scrolling-nav.js"></script>
+	<!-- Faq Accordion -->
+    <script src="js/jquery-ui.js"></script>
+    <!-- Back to top script -->
+    <script src="js/back-to-top.js"></script>
    
 </body>
 
