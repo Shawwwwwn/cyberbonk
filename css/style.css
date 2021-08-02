@@ -55,6 +55,12 @@
     
 */
 
+@media only screen and (min-width: 676px) {
+  #exchange-process {
+    max-width: 16.666667%;
+  }
+}
+
 /*-----------------------------------
 General css class
 -----------------------------------*/
@@ -4028,7 +4034,7 @@ Landing Page Template
 
 .feature-list-bar {
   background: #e3edf9;
-  padding-top: 16px;
+  padding-top: 40px;
   padding-bottom: 16px;
   color: #0a2759;
 }
